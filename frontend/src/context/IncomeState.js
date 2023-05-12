@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import IncomeContext from './IncomeContext'
 
 const IncomeState = (props) => {
-  const host = "http://localhost:5000/api/transaction/"
+  const host = "https://expense-tracker-backend-vatv.onrender.com/api/transaction/"
   const InitialExpense = []
   const InitialIncome = []
 
