@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "start backend"
+    "build": "start backend",
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
