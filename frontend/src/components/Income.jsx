@@ -21,7 +21,7 @@ const Income = () => {
         else{
             navigate('/signin')
         }
-        // eslint-disable-line react-hooks/exhaustive-deps
+        // eslint-disable-next-line
     }, [])
 
     const totalIncome = ()=>{

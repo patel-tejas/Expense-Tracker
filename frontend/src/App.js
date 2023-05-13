@@ -1,20 +1,17 @@
 import Navbar from "./components/Navbar";
-import { useState } from "react";
 // import Orb from "./components/Orb";
 import {
   BrowserRouter as Router,
-  Route,
-  Routes,
+
 } from "react-router-dom";
 
 import IncomeState from "./context/IncomeState";
 import Container from "./components/Container";
+import Footer from "./components/Footer";
 
 
 
 function App() {
-  const token = localStorage.getItem("auth-token")
-  const [event, setEvent] = useState(token)
   return (
     <>
       <Router>
@@ -27,6 +24,9 @@ function App() {
             <main className="max-w-[1440px]">
               <Container />
             </main>
+            <footer>
+              <Footer />
+            </footer>
           </IncomeState>
         </div>
       </Router>

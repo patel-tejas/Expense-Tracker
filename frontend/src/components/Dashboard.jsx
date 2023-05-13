@@ -11,13 +11,16 @@ const Dashboard = () => {
 
   useEffect(() => {
     if (localStorage.getItem('auth-token')) {
+      
       getIncome()
       getExpense()
+  
     }
     else {
       navigate('/signin')
+
     }
-    // eslint-disable-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line
   }, [])
 
   return (
