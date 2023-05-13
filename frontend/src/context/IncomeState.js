@@ -29,7 +29,7 @@ const IncomeState = (props) => {
       method: "DELETE", // *GET, POST, PUT, DELETE, etc.
       headers: {
         "Content-Type": "application/json",
-        "auth-token": localStorage.getItem('token')
+        "auth-token": localStorage.getItem('auth-token')
       },
     });
     const json = await response.json()
