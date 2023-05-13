@@ -39,7 +39,7 @@ const Income = () => {
         // eslint-disable-line react-hooks/exhaustive-deps
     }
     const addLog = async (title, description, amount, category, date) => {
-        const response = await fetch(`http://localhost:5000/api/transaction/add-income`, {
+        const response = await fetch(`https://expense-tracker-backend-vatv.onrender.com/api/transaction/add-income`, {
             method: "POST", // *GET, POST, PUT, DELETE, etc.
             headers: {
               "Content-Type": "application/json",

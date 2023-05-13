@@ -31,7 +31,7 @@ const Expense = () => {
   }
 
   const addLog = async (title, amount, type, category, date, description,) => {
-    const response = await fetch(`http://localhost:5000/api/transaction/add-expense`, {
+    const response = await fetch(`https://expense-tracker-backend-vatv.onrender.com/api/transaction/add-expense`, {
       method: "POST", // *GET, POST, PUT, DELETE, etc.
       headers: {
         "Content-Type": "application/json",
